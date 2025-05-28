@@ -1,105 +1,57 @@
-/* Reset and Base Styles */
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0fdf4;
-  color: #2f4f2f;
-  line-height: 1.6;
-}
-
-/* Header and Footer Styling */
 header, footer {
-  background-color: #388e3c;
-  color: #fff;
+  background-color: #006400;
+  color: white;
   text-align: center;
-  padding: 1.5rem 0;
-}
-
-header h1, footer p {
-  margin: 0.5rem 0;
-}
-
-nav {
-  background-color: #2e7d32;
+  padding: 1em 0;
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0.5rem 0;
+  background-color: #228B22;
   margin: 0;
+  padding: 0.5em 0;
 }
 
 nav li {
-  margin: 0 1rem;
+  margin: 0 1em;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 main {
-  padding: 2rem;
+  padding: 2em;
 }
 
-.about-intro {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  background-color: #e0f2f1;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+section {
+  margin-bottom: 2em;
 }
 
-.about-intro img {
+img {
   max-width: 100%;
-  border-radius: 10px;
-}
-
-.about-intro div {
-  flex: 1;
-}
-
-.mission, .timeline {
-  background-color: #e8f5e9;
-  padding: 1.5rem;
-  border-left: 6px solid #66bb6a;
-  margin-bottom: 2rem;
-  border-radius: 8px;
+  height: auto;
 }
 
 h1, h2, h3 {
-  color: #1b5e20;
-  margin-bottom: 1rem;
+  color: #006400;
 }
 
 footer p {
-  font-size: 0.9rem;
-  margin: 0.3rem 0;
+  margin: 0.5em 0;
+  font-size: 0.9em;
 }
-
-/* Responsive Adjustments */
-  .about-intro {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
 
 
