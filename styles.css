@@ -1,13 +1,182 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .green-text {
-      color: green;
+/* Global Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5fff5; /* light green background */
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #d4edda; /* light green */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+    color: #2e7d32; /* dark green */
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e8f5e9; /* soft green */
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4caf50; /* medium green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-card {
+    background: #d4edda;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    background: #a5d6a7;
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #d4edda;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2e7d32;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
     }
-  </style>
-</head>
-<body>
-  <h1 class="green-text">This is green text</h1>
-</body>
-</html>
+
+    .nav-links.active {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: transla
