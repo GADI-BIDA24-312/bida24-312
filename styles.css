@@ -1,1 +1,13 @@
-kg
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .green-text {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="green-text">This is green text</h1>
+</body>
+</html>
